@@ -1,0 +1,54 @@
+[talk]
+Anything below the talk symbol will be spoken by the computer
+
+Also anything not in a section (aka top of the file) will be the first thing run
+
+To redirect to a new section use the '>' symbol
+ 
+> sec1
+ 
+# sec1
+The game resets its state when each time you change symbols (this is to prevent confusion and sad bugs)
+
+So you need a [talk] before anything will print
+
+[talk]
+
+The game resets its state when each time you change symbols (this is to prevent confusion and sad bugs)
+
+So you need a [talk] before anything will print
+
+This is how you ask a question Most lines are just printed to the screen. 
+
+any options you want the player must start with a - and the section the player is taken to is specified with the text after the :
+
+[question]
+I get printed
+How are you today? 
+    - I'm an option choose me to go to the next section :  sec2
+    - I'll take you back to the start of this section : sec1
+
+# sec2 
+[talk]
+
+The program can display subtitles images and text 
+
+to do so use (subtitle), (image), or (text) at the start of the line that
+
+images are formatted like so | (image) url
+
+(image) https://cdn.dribbble.com/users/11125/screenshots/11342016/bruh_4x.png
+
+title are formatted like so | (title) yeet
+
+(title) yeet
+
+subtitle are formatted like so | (subtitle) Some text
+
+(subtitle) Some text
+
+you can end the game at any point by have `kill_game` alone on any line
+
+Like so
+
+kill_game

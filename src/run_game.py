@@ -62,7 +62,7 @@ while play_game:
             
             engine.print(f'The current set delay is {current_delay} ')
             engine.print('>> ', end='')
-            new_delay = int(input())
+            new_delay = float(input())
             engine.character_delay = new_delay/delay_scaling_factor
 
         elif line.startswith('>'): #this means change sections

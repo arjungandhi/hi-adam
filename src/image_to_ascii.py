@@ -10,10 +10,7 @@ from PIL import Image
 # stealing code from 
 #https://www.geeksforgeeks.org/converting-image-ascii-image-python/
   
-# 70 levels of gray
-gscale1 = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. "[::-1]
-
-
+gscale2 = "@%#*+=-:. "
 
 def getAverageL(image):
   
@@ -35,7 +32,7 @@ def url_to_ascii(url, cols):
 
 def image_to_ascii(image, cols, scale = .43):
     # declare globals
-    global gscale1, gscale2
+    global gscale2
   
     # store dimensions
     W, H = image.size[0], image.size[1]
@@ -86,7 +83,7 @@ def image_to_ascii(image, cols, scale = .43):
             avg = int(getAverageL(img))
   
             # look up ascii char
-            gsval = gscale1[int((avg*69)/255)]
+            gsval = gscale2[int((avg*9)/255)]
   
             # append ascii char to string
             aimg[j] += gsval
