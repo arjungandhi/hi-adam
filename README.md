@@ -16,6 +16,7 @@ And from the source folder run
 
 `python run_game.py adam.game`
 
+Ps. I definately only put my biggest projects in there but feel free to let me know if you have any other questions about my experience and I'll be happy to answer them (in an email I swear)
 
 # What is this. 
 
