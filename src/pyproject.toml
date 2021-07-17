@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hi-adam"
+version = "0.1.0"
+description = ""
+authors = ["Arjun Gandhi <account@arjugandhi.com>"]
+readme = "README.md"
+packages = [{include = "hi_adam"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyfiglet = "^0.8-post.1"
+Pillow = "^8.3.1"
+numpy = "^1.21.0"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,201 @@
+[talk]
+Hi Adam, 
+
+So I swear, I was going to be semi-reasonable about this and just send you all my information.....
+
+Then I had this idea and it seemed like a lot of fun so I got carried away.
+
+Soooooooo with out further ado. I present to you: 
+
+(title) Arjun's Dungeon
+(subtitle) A adventure for you to learn about my skills, proudly fueled by a delicous mixture of caramel and coffee from my nearby coffee shop! 
+
+So lets get started! 
+
+[question]
+Where would you like to start?
+    - Skills: skills
+    - Resume: resume
+    - Schooling: school
+    - Leave : exit
+
+
+# navigator
+
+[question]
+Where to next? 
+    - Skills: skills
+    - Resume: resume
+    - Schooling: school
+    - Change Speed: character-delay
+    - Leave : exit
+
+# resume
+[talk]
+Ah.... you chose the most boring section 
+
+Okay well suit your self.. 
+
+Here's a link to my resume (I'm not going to make you suffer by making you watch this program type it out character by character.)
+
+https://data.arjungandhi.com/Resume.pdf
+
+
+[question]
+What do you want to do? 
+    - Hear my rant about why resumes are the worst: resume-rant
+    - Go back to the navigator: navigator
+    - Leave : exit
+
+# resume-rant
+[talk]
+
+I've never really liked the idea of a resume, it feels like a disservice to both people in the system. One, how can I be expected to condense a huge portion of my life into a single piece of paper, theres not nearly enough space on there. Also, on the employer side of it, how is that expected to work. When I look for people to work with I look for how they work, willinginess to learn and if they care about what we are doing. Its trivial to teach some one a programming language or software stack, teaching some one to be passionate about their work, and the fit between that person and your existing team is far more important. 
+
+I think personal websites are a far better way to show off what you know! I'm working on mine you can see how much ever I have done here: 
+
+https://www.arjungandhi.com/projects/robots/swolkat (I'm linking to the swolkat post its the most complete)
+
+> navigator
+
+# school
+[talk]
+
+(image) https://i.pinimg.com/originals/82/5c/ba/825cba41263f3434021444493acd9d1d.png
+
+So, I went to WPI (Worcester Polytechnic Institute), it's a small college about an hour away from Boston. There I studied Robotics, and I'll get my degree at the end of the summer (I just finished up the last course I need like last week). My college experience was a bit of a strange one, WPI has no pre-reqs for courses or rules about when you can take what, so I just explored, taking courses varying from my core courses to grad level contol engineering courses. I also ended up spending 8 months working on a software engineering startup called Nock during my 2nd year there.  
+
+Our school also really stresses a hands on education, especially in the robotics department. I've been working and leading small teams well before college but my college experience was a whole lot of hands on work, and team work. 
+
+Our school also has 2 major projects that each student is required to do. The IQP and MQP both were incredibly fun experiences where I learned alot. You can read more about the in the project sections. 
+
+
+> navigator
+
+# skills
+[talk]
+I have lots of random skills, I think the best way to highlight them is by talking about the various projects where I picked them up. 
+
+Most of my work exists in some form or the other on github: https://github.com/arjungandhi, Atleast I try to keep as much as I can on there once I learned git existed. I will link to specific project pages/demos in their sections. For the sake of brevity I'll only go into the major projects. 
+
+But I can talk for a while about the various projects I've been a part of. 
+
+
+> skill-navigator
+
+# skill-navigator
+[question]
+What kinda skills do you want to hear more about? 
+    - Social Work: iqp
+    - Technical Work (Robots): robot-navigator
+    - Techinical Work (Software): software-navigator
+    - Entrepaneurship/Software (Nock): nock
+    - Back to the Main Menu: navigator
+    - Leave: exit
+
+
+# iqp
+[talk]
+(title) MakerMap
+
+I think nothing highlights a almost purely social project then my IQP(Intermidate Qualifiyig Project). My goal here was to solve a problem that was close to my heart. The goal was to lower the barrier to entry for tool and resource access on campus. Over my year on this project I learned the basics of interviewing, survey creation, team building and networking. Together my team we were interviewed every lab manager on the campus as well as made connections all through out the structure of WPI. We also surveyed 1/8 of campus. Our report is located here:
+
+I also developed a prototype web-app that could highlight the location of various tools on campus. As well as designed the layout for the SQL database that could intake and handle all of our data.
+
+https://digital.wpi.edu/concern/student_works/bg257h69f?locale=en
+
+Learned: interviewing, survery creation, SQL, React, Mapbox, team building
+
+> skill-navigator
+# robot-navigator
+[question]
+Which Robotics Project do you wanna hear about?
+    - Swol Kat: mqp
+    - SAing Robotics Courses: sa
+    - WPI Robotics Courses: wpi-robots
+    - Leave: exit
+> skill-navigator
+
+# software-navigator
+[question]
+Which Robotics Project do you wanna hear about?
+    - Nock: nock
+    - Freelancing(Urgent Diagnostics): urgent-diagnostics
+    - Freelancing(Care-Institute): care-institute
+    - Leave: exit
+> skill-navigator
+
+
+# nock
+[talk]
+(image) https://library.kissclipart.com/20180901/je/kissclipart-bow-and-arrow-drawing-clipart-bow-and-arrow-clip-a-17ffc3cbaae2e117.jpg
+
+My sophmore year me and 3 friends started a company called Nock.ai (it's now called Testgram). Unlike everything one else there, who were all CS majors, my only CS experience was that one AP CS course I took in highschool. So well I learned how to program. About 8 months later I lef the company, but I think I learned more there then I did anywhere else. 
+
+My first task was working on a recording system for websites (I was bascially remaking FullStory). We needed to record, every click and text input on a page, and then save that somehow... somewhere.. . We had no idea, anyway 2 weeks of coffee induced fervor dreams. We had something that worked. We initially tried to use stream processing to collect all the data we needed. But kinesis streams are like really expensive. So we endedup reverse engineering streams with lambda functions and a S3 bucket. 
+
+Learned: AWS, javascript, python, nosql databases, how browsers actually work, reverse engineering minimised javascript sucks, and how trivial it would be for me to steal credit card information from my friends. 
+
+I worked on lots of other stuff with my teammates, together we worked on designing algorithms to turn the collected data into graphs, talking to potential customers about what they needed, lots of AWS nonsense and alot of highlevel understanding on the AI systems my teammates were working on.
+
+My next major task was trying to visualize the massive graph we had built. I ended up using d3.js to built a very pretty graph. 
+
+Learned: CSS, D3.js, colors are really hard. 
+
+My final big task running recorded actions again. For this I needed to learn all about browser automation tools and how they worked. We needed to generate videos of what the bot(currently just a recorded sequence) would be doing on our user webpages. 
+
+Learned: browser automation, nodejs
+
+Unfortunaely I don't have alot fo this code and the messy nature of me leaving the company means its kind of a pain to get any of it to show. But I think I learned more in those 8 months than ever before. 
+
+> skill-navigator
+
+# mqp
+
+> robot-navigator
+# sa
+
+> robot-navigator
+# wpi-robots
+
+> robot-navigator
+# urgent-diagnostics
+
+> software-navigator
+# care-institute
+
+> software-navigator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# exit
+[talk]
+I hope you enjoyed this little game I whipped up was slightly more fun then reading through an email. 
+
+It's been a pleasure talking to y'all. That being said I understand how difficult it can be to both judge and show if some ones a good fit, for a company. Personally I think I am the best and showing what I'm capable of in a actual work enviroment. If you are interested, I think a great way we could figure out if we are a good fit for each other is for me to do a "internship" with you all, and at the end of the period we can decide if theres a future work opportuninty there? 
+
+kill_game
+
+# character-delay
+[talk]
+Ah, the typing speed get to you? Don't worry it got to me too its cute at first but after a while of debugging you start to lose it with how slow it is.
+
+You can adjust the typing speed with the input below 
+
+Choose any number between 0 and 10 (you can also do floats) you can put higher but I wouldnt you'll be here all week. 
+
+
+adjust_delay
+> navigator
